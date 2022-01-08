@@ -129,12 +129,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_3); // Add PWM Servo Motor left
   HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3); // Add PWM Servo Motor right
-//  HAL_TIM_IC_Start_IT(&htim5, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //HAL_GPIO_WritePin(LED3_WIFI__LED4_BLE_GPIO_Port, LED3_WIFI__LED4_BLE_Pin, GPIO_PIN_SET);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -147,15 +145,11 @@ int main(void)
 		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);
 		  HAL_Delay(300); //LED ON
 
-		  	  	  //Pwm - Servo motor arm rotates to 180 degree
-
 			      __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_3, 100);
-			      HAL_Delay(1500);
-
-			      //Pwm - Servo motor arm rotates to 0 degree
+			      HAL_Delay(1500); //Pwm - Servo motor arm rotates to 180 degree
 
 			      __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_3, 50);
-			      HAL_Delay(1500);
+			      HAL_Delay(1500); //Pwm - Servo motor arm rotates to 0 degree
 
 			      __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 50);
 			      HAL_Delay(1500);
@@ -163,14 +157,10 @@ int main(void)
 			      __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 100);
 			      HAL_Delay(1500);
 
-
-
 		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);
 		  HAL_Delay(300); //LED OFF
 
 	  }
-
-
 
 
   }
