@@ -152,15 +152,15 @@ int main(void)
 			      __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_3, 100);
 			      HAL_Delay(1500);
 
-			      __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 100);
-			      HAL_Delay(1500);
-
 			      //Pwm - Servo motor arm rotates to 0 degree
 
 			      __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_3, 50);
 			      HAL_Delay(1500);
 
 			      __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 50);
+			      HAL_Delay(1500);
+
+			      __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_3, 100);
 			      HAL_Delay(1500);
 
 
