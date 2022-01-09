@@ -48,3 +48,4 @@ main.c|main code
 
 # Once apon a time...
 [![Watch the video](https://img.youtube.com/vi/CrS39qecWtI/hqdefault.jpg)](https://www.youtube.com/watch?v=CrS39qecWtI)
+* 영상<br />
