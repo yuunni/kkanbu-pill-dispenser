@@ -43,7 +43,8 @@
 main.c|main code
 
 # 구현사항
-* Peripheral GPIO : 적외선 모션 감지 센서, Servo motor, LED<br />
+* Peripheral GPIO : 적외선 모션 감지 센서, LED<br />
+* PWM : Servo motor
 
 # Once apon a time...
 [![Watch the video](https://img.youtube.com/vi/CrS39qecWtI/hqdefault.jpg)](https://www.youtube.com/watch?v=CrS39qecWtI)
